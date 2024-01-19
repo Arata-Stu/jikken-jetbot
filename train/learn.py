@@ -52,7 +52,7 @@ class CustomCircleDataset(Dataset):
 
 class SimpleCNN(nn.Module):
     def __init__(self):
-        super(SimpleCNN_1, self).__init__()
+        super(SimpleCNN, self).__init__()
         self.conv1 = nn.Conv2d(3, 16, 3, stride=2, padding=1)
         self.conv2 = nn.Conv2d(16, 32, 3, stride=2, padding=1)
         # 以下の数値は計算に基づいて適切に設定してください
